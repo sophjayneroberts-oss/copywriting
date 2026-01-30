@@ -1,0 +1,78 @@
+/* assets/css/style.css */
+
+/* IMPORT FONTS: Playfair Display (Headings) & Montserrat (Body) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+/* GLOBAL SETTINGS */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc; /* Clean off-white */
+    color: #333; /* Dark grey text */
+    font-family: 'Montserrat', sans-serif; /* Clean body text */
+    line-height: 1.6;
+}
+
+/* TYPOGRAPHY - THE "HANNA" LOOK */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant Headings */
+    font-weight: 700;
+    margin-top: 0;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 60px; /* Big impact heading */
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
