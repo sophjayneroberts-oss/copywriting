@@ -1,22 +1,31 @@
 /* assets/css/style.css */
 
-/* IMPORT FONTS: Playfair Display (Headings) & Montserrat (Body) */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+/* IMPORT FONTS: 
+   'Quicksand' for the round body text
+   'Fredoka One' for the fun chunky logo 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap');
 
 /* GLOBAL SETTINGS */
 body {
     margin: 0;
     padding: 0;
-    background-color: #fcfcfc; /* Clean off-white */
-    color: #333; /* Dark grey text */
-    font-family: 'Montserrat', sans-serif; /* Clean body text */
+    background-color: #fcfcfc; /* Keep the clean background */
+    
+    /* FRIENDLY BLUE TEXT */
+    color: #2c6e8f; /* A readable, deep ocean blue */
+    
+    /* ROUND FONT */
+    font-family: 'Quicksand', sans-serif; 
     line-height: 1.6;
+    font-weight: 500; /* Making it slightly bolder looks friendlier */
 }
 
-/* TYPOGRAPHY - THE "HANNA" LOOK */
+/* TYPOGRAPHY */
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif; /* Elegant Headings */
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    color: #2c6e8f; /* Matching the friendly blue */
     margin-top: 0;
 }
 
@@ -28,11 +37,20 @@ nav {
     padding: 20px 40px;
 }
 
+/* THE FUN LOGO */
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Fredoka One', cursive; /* The "Bubble" font */
+    font-size: 32px;
     letter-spacing: 1px;
+    
+    /* SUNSHINE COLORFUL GRADIENT TEXT */
+    /* This makes the text look like a sunset/sunrise! */
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Fallback color if gradient doesn't work */
+    color: #ff5e62; 
 }
 
 nav ul {
@@ -47,10 +65,13 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #2c6e8f; /* Friendly Blue */
+    font-size: 16px; /* Slightly bigger for readability */
+    font-weight: 700; /* Nice and bold */
+}
+
+nav a:hover {
+    color: #ff9966; /* Turns orange when you hover! */
 }
 
 /* HERO SECTION */
@@ -62,17 +83,29 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 60px; /* Big impact heading */
+    font-size: 60px;
+    line-height: 1.2;
     margin-bottom: 20px;
+    color: #27617e; /* Slightly darker blue for the big headline */
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 30px;
-    background-color: #000;
+    padding: 15px 35px;
+    
+    /* ROUND BUTTONS */
+    border-radius: 50px; 
+    
+    background-color: #ff9966; /* Fun Orange Button */
     color: #fff;
     text-decoration: none;
     margin-top: 20px;
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: transform 0.2s; /* Adds a little bounce */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Grows slightly when you hover */
+    background-color: #ff5e62;
 }
